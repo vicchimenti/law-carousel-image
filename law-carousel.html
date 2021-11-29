@@ -1,17 +1,15 @@
-<div class="carouselImageWrapper carousel-item <t4 type='content' name='Caption Position' output='normal' display_field='value' />" id="id<t4 type='meta' meta='content_id' />">	
+<div class="carouselImageWrapper card carousel-item <t4 type='content' name='Caption Position' output='normal' display_field='value' />" id="id<t4 type='meta' meta='content_id' />">	
 
     <div class="carouselImage">
-      <img src='<t4 type="content" name="Image" output="imageurl" />' alt='  <t4 type="content" name="Image Alt Description" output="normal" modifiers="striptags,htmlentities" />'>
+      <img class='card-img-top' src='<t4 type="content" name="Image" output="imageurl" />' alt='<t4 type="content" name="Image Alt Description" output="normal" modifiers="striptags,htmlentities" />'>
     </div>
-    <div class="carouselImageCaption standardContent">
-      <t4 type="content" name="Caption" output="normal" modifiers="medialibrary,nav_sections" />
+    <div class="carouselImageCaption card-body">
+        <p class="card-text"><t4 type="content" name="Caption" output="normal" modifiers="medialibrary,nav_sections" /></p>
     </div>
-      <script>
-
-      $( window ).on( "load", function() {
-          $( ".carousel-inner .carousel-item" ).first().addClass( "active" );
-      });
-      
-  </script>
+    <script>
+        $( window ).on( "load", function() {
+            $( ".carousel-inner .carousel-item" ).first().addClass( "active" );
+        });
+    </script>
 
 </div>
