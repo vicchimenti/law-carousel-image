@@ -1,1 +1,3 @@
-# law-carousel-image
+# Law Carousel Image
+
+An image card for use in the carousel
